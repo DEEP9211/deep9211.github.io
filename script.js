@@ -33,7 +33,7 @@ $(document).ready(function(){
                      success: function (response) {
                          if(response.status == 1){
                              // Setting Image for Preview
-                             $("#prev_img").attr("src","upload/"+response.returnText);
+                             $("#prev_img").attr("src","./upload/"+response.returnText);
                              $("#prev_img").show();
                              $("#response").text("Upload successfully");
                          }else{
